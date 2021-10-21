@@ -1,4 +1,5 @@
 import React from 'react';
+import AppLoading from 'expo-app-loading';
 import {
   useFonts, 
   Roboto_400Regular, 
@@ -12,6 +13,10 @@ export default function App() {
     Roboto_400Regular, 
     Roboto_700Bold
   })
+
+  if(!fontsLoaded) {
+    return <AppLoading />
+  }
 
   return (
     <Home />
