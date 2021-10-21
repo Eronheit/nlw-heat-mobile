@@ -9,7 +9,7 @@ import { COLORS } from '../../theme';
 const SIZES = {
   SMALL: {
     containerSize: 32, 
-    avatarSize: 32
+    avatarSize: 28
   }, 
   NORMAL: {
     containerSize: 48, 
