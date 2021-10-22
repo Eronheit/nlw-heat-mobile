@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { ScrollView } from 'react-native';
 import { io } from 'socket.io-client';
 
+import { MESSAGES_EXAMPLE } from '../../utils/messages';
+
 import { api } from '../../assets/services/api';
 import { IMessage, Message,  } from '../Message';
 import { styles } from './styles';
 
-const messagesQueue: IMessage[] = [];
+const messagesQueue: IMessage[] = [...MESSAGES_EXAMPLE];
 
 const socket = io(String(api.defaults.baseURL));
 
