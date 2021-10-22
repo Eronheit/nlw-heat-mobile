@@ -5,7 +5,7 @@ import { MotiView } from 'moti';
 import { UserPhoto } from '../UserPhoto';
 import { styles } from './styles';
 
-export type Message = {
+export type IMessage = {
   id: string;
   text: string;
   user: {
@@ -15,7 +15,7 @@ export type Message = {
 }
 
 type MessageProps = {
-  data: Message;
+  data: IMessage;
 }
 
 export function Message({ data }: MessageProps) {
