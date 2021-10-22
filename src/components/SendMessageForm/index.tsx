@@ -23,8 +23,6 @@ export function SendMessageForm() {
       Keyboard.dismiss();
 
       setSendingMessage(false);
-
-      Alert.alert('Mensagem enviada')
     } 
     else {
       Alert.alert('Escreva uma mensagem para enviar.');
